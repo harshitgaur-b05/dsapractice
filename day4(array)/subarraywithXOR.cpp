@@ -7,7 +7,6 @@ int solve(vector<int> &A, int B) {
     map<int, int> mpp; //declaring the map.
     mpp[xr]++; //setting the value of 0.
     int cnt = 0;
-
     for (int i = 0; i < n; i++) {
         // prefix XOR till index i:
         xr = xr ^ A[i];
