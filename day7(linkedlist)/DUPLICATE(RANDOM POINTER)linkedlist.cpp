@@ -14,6 +14,7 @@ public:
     }
 };
   
+
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
@@ -33,8 +34,8 @@ public:
         // for traversing
         Node* a = head;
         Node* b = duplicate;
-        Node* dummy2 = new Node(-1);
-        Node* tmpD = dummy2;
+        // Node* dummy2 = new Node(-1);
+        Node* tmpD = dummy;
         while (b != NULL) {
 
             tmpD->next = a;
@@ -45,8 +46,8 @@ public:
             tmpD = tmpD->next;
         }
         // assign random pointers as(our dupli is next node to original and)
-        dummy2 = dummy2->next;
-        Node* t1 = dummy2;
+        dummy = dummy->next;
+        Node* t1 = dummy;
 
         while (t1 != nullptr) {
             t2 = t1->next;
@@ -61,7 +62,7 @@ public:
         Node* d2 = new Node(-1);
         t1 = d1;
         t2 = d2;
-        Node* t = dummy2;
+        Node* t = dummy;
         while (t) {
             t1->next = t;
             t = t->next;
