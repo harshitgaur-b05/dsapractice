@@ -45,7 +45,7 @@ public:
             b = b->next;
             tmpD = tmpD->next;
         }
-        // assign random pointers as(our dupli is next node to original and)
+        // STEP 3: assign random pointers as(our dupli is next node to original and)
         dummy = dummy->next;
         Node* t1 = dummy;
 
