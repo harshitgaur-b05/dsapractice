@@ -26,5 +26,5 @@ public:
         int max=1;
         preorder(root,1,max);
         return max;
-    }
+    } 
 };
