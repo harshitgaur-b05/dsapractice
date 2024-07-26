@@ -1,6 +1,5 @@
   #include<bits/stdc++.h>
   using namespace std;
-
 class Solution {
 public:
     // Function to expand around the center and return the length of the palindrome
